@@ -1,8 +1,15 @@
+
 const inputField = document.querySelector('.input-field');
-const addTask = document.querySelector('submit-todos');
+const addTask = document.querySelector('.submit-todos');
 const removeTask = document.querySelector('.delete-todo');
 
+function userInput(enterTasks) {
+    console.log('hello');
+    
+  
+}
 
-inputField.addEventListener('click', addToDo);
-addTask.addEventListener('click', createList);
-removeTask.addEventListener('click', DeleteItem);
+
+
+addTask.addEventListener('click', userInput);
+//removeTask.addEventListener('click', DeleteItem);
