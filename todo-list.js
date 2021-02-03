@@ -11,26 +11,27 @@ function makeTodoList(e) {
     paragraph.innerText = inputField.value;
     const newInput = document.createElement('div');
     list.appendChild(newInput);
-    newInput.innerHTML = `
-        <input type="submit" value="-Task">
-        <input class="newInput" type="text" name="input">
-        <input type="submit" value="+Task">
+    newInput.
+    innerHTML = `
+        <button class="delete-todos">-Task</button>
+        <input class="input-field" type="text" name="input">
+        <button class="submit-todos">+Task</button
     `;
     console.log(newInput);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 buttonTodo.addEventListener('click', makeTodoList);
+
+
+
+
+
+
+
+
+
+
+
 //deleteItem.addEventListener('click', deleteList);
 
 
