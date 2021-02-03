@@ -1,10 +1,13 @@
-.container {
+.form-container {
     background-color: blue;
+    opacity: 1;
     padding: 20px;
     position: relative;
     width: 50%;
     text-align: center;
     border-radius: 10px;
+    display: grid;
+
 
 }
 
@@ -20,4 +23,21 @@ h2 {
     color: white;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+
+
+.input-field {
+    position:relative;
+    margin: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
 }
