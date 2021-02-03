@@ -9,18 +9,25 @@ function makeTodoList(e) {
     const paragraph = document.createElement('p');
     //list.appendChild(paragraph);
     paragraph.innerText = inputField.value;
-    const newInput = document.createElement('div');
-    list.appendChild(newInput);
-    newInput.
-    innerHTML = `
-        <button class="delete-todos">-Task</button>
-        <input class="input-field" type="text" name="input">
-        <button class="submit-todos">+Task</button
-    `;
-    console.log(newInput);
-}
+    
+        let newInput = document.createElement('div');
+        list.appendChild(newInput);
+        
+        newInput.
+        innerHTML = `
+            <button class="delete-todos">-Task</button>
+            <input class="input-field" type="text" name="input">
+            <button class="submit-todos">+Task</button
+        `;
+        
+        
+        
+    }
+    
+    
+    buttonTodo.addEventListener('click', makeTodoList);
 
-buttonTodo.addEventListener('click', makeTodoList);
+
 
 
 
