@@ -6,46 +6,53 @@ const inputField = document.querySelector('.input-field');
 
 function makeTodoList(e) {
     e.preventDefault();
-    const paragraph = document.createElement('p');
-    //list.appendChild(paragraph);
-    paragraph.innerText = inputField.value;
+    const newInputField = document.createElement('div');
+    newInputField.innerText = inputField.value;
+    newInputField.classList.add('userInput');
+    inputField.innerHTML = `
+    <input type= ${buttonTodo} class= ${inputField} name="userinput">
     
-        let newInput = document.createElement('div');
-        list.appendChild(newInput);
+    `;
+    
+    document.body.appendChild(newInputField);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
         
-        newInput.
-        innerHTML = `
-            <button class="delete-todos">-Task</button>
-            <input class="input-field" type="text" name="input">
-            <button class="submit-todos">+Task</button
-        `;
         
-        
-        
-    }
+          
+buttonTodo.addEventListener('click', makeTodoList);
+     
     
     
-    buttonTodo.addEventListener('click', makeTodoList);
-
-
-
-
-
-
-
-
-
-
-
-
-
-//deleteItem.addEventListener('click', deleteList);
-
-
-
-
-
+        
+         
+        
+        
+        
+        
     
+    
+
+
+
+
+
+
+
+
+
+
 
 
 
