@@ -9,15 +9,16 @@ function makeTodoList(e) {
     const newInputField = document.createElement('div');
     newInputField.innerText = inputField.value;
     newInputField.classList.add('userInput');
+    list.appendChild(newInputField);
     inputField.innerHTML = `
     <input type= ${buttonTodo} class= ${inputField} name="userinput">
     
     `;
     
-    document.body.appendChild(newInputField);
     
 }
 
+buttonTodo.addEventListener('click', makeTodoList);
 
 
 
@@ -31,7 +32,6 @@ function makeTodoList(e) {
         
         
           
-buttonTodo.addEventListener('click', makeTodoList);
      
     
     
